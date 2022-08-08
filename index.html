@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritish Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Ubuntu:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* Css reset */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        background-size: 100%;
+        height: 900px;
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid rgb(0, 119, 255); */
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    .left img {
+        width: 110px;
+        filter: invert(100%);
+    }
+
+    .navbar {
+
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        /* border: 2px solid rgb(0, 0, 0); */
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.459);
+    }
+
+    .right {
+
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 23px;
+
+
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 25px;
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar li a:hover {
+        /* text-decoration: underline; */
+        color: rgb(122, 122, 122);
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px 20px;
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0.336);
+        color: white;
+        border-radius: 12px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(49, 48, 48);
+    }
+
+    .container {
+        width: 32%;
+        /* border: 2px solid white; */
+        margin: 98px 22px;
+        padding: 75px;
+        border-radius: 30px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', cursive;
+        border-radius: 12px;
+        text-align: center;
+        display: block;
+        width: 372px;
+        padding: 8px;
+        /* border: 2px solid black; */
+        margin: 4px auto;
+        font-size: 18px;
+    }
+
+    .container h2 {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.37);
+        margin: 12px 76px
+    }
+
+    .container button {
+        display: block;
+        width: 72%;
+        margin: 13px auto;
+    }
+</style>
+
+<body>
+    <header>
+
+        <div class="left">
+            <img src="img/gymlogo.png" alt="">
+            <div>Pritish Fitness</div>
+
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Plans</a></li>
+                <li><a href="#">Locations</a></li>
+
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Bmi Calculator</button>
+            <button class="btn">Contact Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym of Nagpur now!!!</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="name" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="name" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="name" placeholder="Enter your Locality">
+            </div>
+            <div>
+                <button class="btn">Get your pesonalised plan now!</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
